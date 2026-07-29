@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "Pablo Marino",
   "type": "module",
-  "main": "api/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "node --env-file=.env --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
