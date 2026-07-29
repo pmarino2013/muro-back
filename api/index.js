@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/mensajes", async (req, res) => {
-  const mensajes = await Mensaje.find();
+  const mensajes = await Mensaje.find().sort({ creadoEn: -1 });
   res.json({
     mensajes,
   });
